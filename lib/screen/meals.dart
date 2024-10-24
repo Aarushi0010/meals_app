@@ -21,24 +21,12 @@ class MealScreen extends StatelessWidget{
           mainAxisSize: MainAxisSize.min,
           children: [
             Text('uh oh.....Nothing to see here',
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .headlineLarge!
-                    .copyWith(color: Theme
-                    .of(context)
-                    .colorScheme
-                    .onBackground)),
+                style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onBackground)),
             const SizedBox(height: 16),
             Text('Try selecting a different category' ,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodyLarge!
-                    .copyWith(color: Theme
-                    .of(context)
-                    .colorScheme
-                    .onBackground)),
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onBackground)),
           ],
 
         ),
