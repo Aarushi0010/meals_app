@@ -26,9 +26,10 @@ class TabScreen extends StatefulWidget {
     Widget activePage = const CategoriesScreen();
     var activePageTitle = 'Categories';
 
-    if (_selectedPageIndex == 1)
-      activePage = MealScreen(meals: []);
-    activePageTitle = 'Your Favourites';
+    if (_selectedPageIndex == 1) {
+      activePage = const MealScreen(meals: []);
+      activePageTitle = 'Your Favourites';
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text(activePageTitle),
