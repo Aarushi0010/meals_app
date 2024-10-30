@@ -17,11 +17,7 @@ class CategoriesScreen extends StatelessWidget{
 
   @override
   Widget build(context){
-  return Scaffold(
-    appBar: AppBar(
-      title: const Text('Pick a category'),
-    ),
-    body: GridView(
+  return GridView(
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -33,8 +29,7 @@ class CategoriesScreen extends StatelessWidget{
         for(final category in availableCategories)
           CategoryGridItem(category: category , onSelectCategory: (){_selectCategory(context, category) ;} ),
       ],
-    ),
-  );
+    );
 }
 
 }
